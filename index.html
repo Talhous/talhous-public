@@ -8,11 +8,10 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
     <style>
-        /* Protection Styles */
+        /* Institutional Protection Layer */
         body { 
             font-family: 'Inter', sans-serif; 
             scroll-behavior: smooth; 
-            /* Disable text selection */
             -webkit-user-select: none;
             -moz-user-select: none;
             -ms-user-select: none;
@@ -25,7 +24,6 @@
         .legal-modal { display: none; position: fixed; inset: 0; z-index: 100; background: rgba(2, 6, 23, 0.98); backdrop-filter: blur(10px); padding: 2rem; overflow-y: auto; }
         .legal-modal.active { display: block; }
         
-        /* Watermark */
         .watermark {
             position: fixed;
             bottom: 20px;
@@ -40,21 +38,42 @@
             letter-spacing: 0.2em;
         }
 
-        /* Prevent image saving */
         img { pointer-events: none; }
         .glow-border { border: 1px solid rgba(99, 102, 241, 0.2); transition: all 0.3s ease; }
         .glow-border:hover { border-color: rgba(99, 102, 241, 0.6); box-shadow: 0 0 20px -5px rgba(99, 102, 241, 0.3); }
+        
+        .protection-banner {
+            background: rgba(239, 68, 68, 0.1);
+            border-bottom: 1px solid rgba(239, 68, 68, 0.2);
+            color: #f87171;
+            font-size: 10px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            text-align: center;
+            padding: 8px;
+        }
+
+        .logo-frame {
+            filter: drop-shadow(0 0 8px rgba(99, 102, 241, 0.3));
+        }
     </style>
 </head>
 <body class="bg-[#020617] text-slate-300 antialiased" oncontextmenu="return false;">
 
     <div class="watermark">Secured Access: TH-K2025921247</div>
 
-    <!-- Navigation -->
-    <nav class="fixed w-full z-50 border-b border-white/5 glass-nav">
+    <!-- Navigation Hub -->
+    <nav class="fixed w-full z-50 glass-nav border-b border-white/5">
+        <div class="protection-banner">
+            Notice: Encrypted Intellectual Property Protocols are Active on this Hub
+        </div>
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <div class="flex items-center gap-3">
-                <div class="w-10 h-10 bg-indigo-600 rounded-lg flex items-center justify-center font-black italic text-white text-xl">T</div>
+            <div class="flex items-center gap-4">
+                <img src="logo.png.png" alt="TALHOUS Logo" class="h-12 w-auto logo-frame rounded-lg" onerror="this.style.display='none'; document.getElementById('text-logo').style.display='flex'">
+                <div id="text-logo" class="hidden items-center gap-3">
+                    <div class="w-10 h-10 bg-indigo-600 rounded-lg flex items-center justify-center font-black italic text-white text-xl">T</div>
+                </div>
                 <div class="flex flex-col">
                     <span class="text-white font-black tracking-tighter text-lg uppercase leading-none">TALHOUS™</span>
                     <span class="text-[9px] text-indigo-400 font-bold uppercase tracking-[0.2em]">Strategic Hub</span>
@@ -63,22 +82,21 @@
             <div class="hidden md:flex gap-8 text-[10px] font-bold uppercase tracking-widest items-center text-slate-400">
                 <a href="#focus" class="hover:text-white transition-colors">Our Focus</a>
                 <a href="#value" class="hover:text-white transition-colors">The Value</a>
-                <a href="#packages" class="hover:text-white transition-colors">Packages</a>
+                <a href="#expansion" class="hover:text-white transition-colors">Expansion</a>
                 <a href="#contact" class="bg-indigo-600 px-5 py-2 rounded text-white hover:bg-indigo-500 transition-all uppercase tracking-widest font-extrabold shadow-lg shadow-indigo-600/20">Client Hub</a>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <header class="relative pt-56 pb-32 px-6 section-gradient border-b border-white/5 overflow-hidden">
-        <div class="max-w-7xl mx-auto space-y-10">
+    <header class="relative pt-64 pb-32 px-6 section-gradient border-b border-white/5 overflow-hidden">
+        <div class="max-w-7xl mx-auto space-y-10 text-left">
             <div class="flex flex-wrap items-center gap-4">
                 <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20">
-                    <span class="text-[10px] font-black text-indigo-400 uppercase tracking-widest">Level 1 B-BBEE // 100% Black Female Owned</span>
+                    <span class="text-[10px] font-black text-indigo-400 uppercase tracking-widest">B-BBEE Level 1 Contributor: 135% Recognition</span>
                 </div>
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-500/10 border border-red-500/20">
-                    <span class="w-1.5 h-1.5 bg-red-500 rounded-full animate-pulse"></span>
-                    <span class="text-[10px] font-black text-red-400 uppercase tracking-widest">Encrypted IP Protocol Active</span>
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/5 border border-white/10">
+                    <span class="text-[10px] font-black text-slate-400 uppercase tracking-widest">100% Black Female Owned</span>
                 </div>
             </div>
             <h1 class="serif text-5xl md:text-8xl text-white leading-tight italic">
@@ -87,23 +105,22 @@
             <p class="text-xl text-slate-400 max-w-2xl leading-relaxed italic text-sm md:text-base">
                 We identify <strong>Hidden Costs</strong> within complex business payment structures. TALHOUS secures your operational benchmarks and bridges the gap between raw data and professional excellence.
             </p>
-            <div class="pt-4">
+            <div class="pt-4 flex flex-wrap gap-4">
                 <a href="#focus" class="px-10 py-5 bg-white text-black font-black uppercase text-xs tracking-[0.2em] rounded hover:bg-indigo-600 hover:text-white transition-all shadow-xl shadow-white/5">Discover Our Methodology</a>
+                <button onclick="toggleModal('ip')" class="px-6 py-5 border border-white/10 text-white font-black uppercase text-[10px] tracking-widest rounded hover:bg-white/5 transition-all">IP & Disclaimer</button>
             </div>
         </div>
     </header>
 
-    <!-- The 5 W's Focus -->
+    <!-- Strategic Focus Section -->
     <section id="focus" class="py-32 px-6 border-b border-white/5 bg-slate-950/20">
         <div class="max-w-7xl mx-auto">
             <div class="grid lg:grid-cols-2 gap-20 items-start">
-                <div class="space-y-8">
+                <div class="space-y-8 text-left">
                     <p class="text-pill">Our Core Focus</p>
                     <h2 class="serif text-4xl md:text-5xl text-white italic leading-tight">Remuneration Review & <br>General Compliance.</h2>
                     <p class="text-slate-400 leading-loose text-justify italic text-sm">
-                        The most common question we hear is: <em>"Is this just a standard HR audit?"</em> 
-                        <br><br>
-                        <strong>The answer is no.</strong> Our focus is on the <strong>Structural Integrity</strong> of your company's spending. We identify <strong>Hidden Payment Gaps</strong>—discrepancies in bonuses, overtime, and shift-pay that often go unnoticed. We provide a specialized review layer that works alongside your primary team to ensure every rand is spent efficiently and remains legally defensible.
+                        The core focus of our engagement is on the <strong>Structural Integrity</strong> of your company's spending. We identify <strong>Hidden Payment Gaps</strong>—discrepancies in bonuses, overtime, and shift-pay that often go unnoticed. We provide a specialized review layer that works alongside your primary team to ensure every rand is spent efficiently and remains legally defensible.
                     </p>
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -112,23 +129,15 @@
                         <p class="text-[10px] text-slate-500 uppercase leading-loose tracking-widest font-bold">Targeting payment discrepancies missed by standard reviews.</p>
                     </div>
                     <div class="p-8 bg-slate-900/40 border border-white/5 rounded-3xl glow-border">
-                        <h4 class="text-white font-bold mb-3 italic">Labour Standards</h4>
-                        <p class="text-[10px] text-slate-500 uppercase leading-loose tracking-widest font-bold">Ensuring alignment with fair-pay principles to reduce legal risk.</p>
-                    </div>
-                    <div class="p-8 bg-slate-900/40 border border-white/5 rounded-3xl glow-border">
                         <h4 class="text-white font-bold mb-3 italic">Workforce Mapping</h4>
                         <p class="text-[10px] text-slate-500 uppercase leading-loose tracking-widest font-bold">Matching demographic structures with regional industry targets.</p>
-                    </div>
-                    <div class="p-8 bg-slate-900/40 border border-white/5 rounded-3xl glow-border">
-                        <h4 class="text-white font-bold mb-3 italic">B-BBEE Support</h4>
-                        <p class="text-[10px] text-slate-500 uppercase leading-loose tracking-widest font-bold">Verifying equity data to protect and improve your business rating.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Value & ROI -->
+    <!-- Value & ROI Section -->
     <section id="value" class="py-32 px-6 bg-slate-950/50 border-b border-white/5">
         <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-20 items-center">
             <div class="relative">
@@ -142,40 +151,43 @@
                         </div>
                     </div>
                     <div class="h-px bg-white/5"></div>
-                    <p class="text-sm italic text-slate-400">"TALHOUS identifies the unseen costs that standard checks are not designed to find, providing a clear return on investment through significant cost recovery."</p>
+                    <p class="text-sm italic text-slate-400 text-left">"TALHOUS identifies the unseen costs that standard checks are not designed to find, providing a clear return on investment through significant cost recovery."</p>
                 </div>
             </div>
-            <div class="space-y-8">
+            <div class="space-y-8 text-left">
                 <p class="text-pill">The Value Proposition</p>
                 <h3 class="serif text-4xl text-white italic">Why Partner with TALHOUS?</h3>
                 <div class="space-y-6 text-slate-400">
                     <p class="text-sm leading-loose">
-                        Large organizations often experience <strong>"Cost Drift"</strong>—small, repeating errors in payment calculations that lead to substantial losses. We stop these hidden costs and protect your statutory standing.
+                        We provide surgical forensic oversight that traditional auditors overlook. Large-scale entities trust TALHOUS to bridge the gap between financial raw data and institutional performance.
                     </p>
-                    <ul class="space-y-4 text-xs font-black uppercase tracking-widest text-indigo-400">
-                        <li class="flex items-center gap-4"><span class="w-2 h-2 bg-indigo-500 rounded-full shadow-[0_0_10px_#6366f1]"></span> Eliminating hidden payment gaps in complex payroll files.</li>
-                        <li class="flex items-center gap-4"><span class="w-2 h-2 bg-indigo-500 rounded-full shadow-[0_0_10px_#6366f1]"></span> Reducing legal risk through proactive parity checks.</li>
-                        <li class="flex items-center gap-4"><span class="w-2 h-2 bg-indigo-500 rounded-full shadow-[0_0_10px_#6366f1]"></span> Maximizing B-BBEE through 135% Procurement Recognition.</li>
+                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4 text-[10px] font-black uppercase tracking-widest text-indigo-400">
+                        <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-indigo-500 rounded-full shadow-[0_0_8px_#6366f1]"></span> Eliminating "Remuneration Drift" & Hidden Gaps</li>
+                        <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-indigo-500 rounded-full shadow-[0_0_8px_#6366f1]"></span> 135% B-BBEE Procurement Recognition</li>
+                        <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-indigo-500 rounded-full shadow-[0_0_8px_#6366f1]"></span> Defensible Statutory Compliance (POPIA/PAIA)</li>
+                        <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-indigo-500 rounded-full shadow-[0_0_8px_#6366f1]"></span> Forensic Integration with Client Workflows</li>
+                        <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-indigo-500 rounded-full shadow-[0_0_8px_#6366f1]"></span> Direct Seven-Figure Cost Recovery Potential</li>
+                        <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-indigo-500 rounded-full shadow-[0_0_8px_#6366f1]"></span> Rapid Response Statutory Shielding</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Case Study Hook -->
+    <!-- Case Study Section -->
     <section id="case-study" class="py-32 px-6 bg-slate-900/10 border-b border-white/5">
         <div class="max-w-7xl mx-auto">
             <div class="bg-indigo-600/5 border border-indigo-500/20 p-10 md:p-20 rounded-[3rem] relative overflow-hidden">
-                <h2 class="text-pill mb-6">Case Analysis // 001</h2>
-                <div class="grid md:grid-cols-2 gap-12 items-center">
+                <h2 class="text-pill mb-6 text-left">Case Analysis // 001</h2>
+                <div class="grid md:grid-cols-2 gap-12 items-center text-left">
                     <div class="space-y-6">
                         <h3 class="serif text-3xl text-white italic leading-tight">Mitigating Payment Discrepancies.</h3>
                         <p class="text-sm text-slate-400 leading-loose italic text-justify">
                             A major industrial entity suspected inconsistencies in their variable payments. By mapping payment structures across 10,000+ data points, TALHOUS identified <strong>seven-figure hidden costs</strong> that had been missed by standard reviews.
                         </p>
                     </div>
-                    <div class="bg-black/40 border border-white/5 p-8 rounded-2xl text-center space-y-4">
-                        <p class="text-3xl font-black text-white italic">R1,000,000+</p>
+                    <div class="bg-black/40 border border-white/5 p-8 rounded-2xl text-center space-y-4 shadow-2xl">
+                        <p class="text-3xl font-black text-white italic tracking-tighter">R1,000,000+</p>
                         <p class="text-[10px] font-bold text-indigo-400 uppercase tracking-[0.3em]">Institutional Value Recovered</p>
                     </div>
                 </div>
@@ -183,33 +195,16 @@
         </div>
     </section>
 
-    <!-- Packages Section -->
-    <section id="packages" class="py-32 px-6 max-w-7xl mx-auto">
-        <div class="text-center mb-20 space-y-4">
-            <p class="text-pill">Engagement Models</p>
-            <h3 class="serif text-5xl text-white italic">Managed Audit Packages</h3>
-        </div>
-        <div class="grid md:grid-cols-2 gap-8">
-            <div class="bg-slate-900/30 border border-white/5 p-12 rounded-[3.5rem] hover:border-indigo-500/30 transition-all flex flex-col justify-between">
-                <div>
-                    <div class="text-[10px] font-black text-indigo-500 uppercase tracking-[0.3em] mb-4">Product 01</div>
-                    <h4 class="text-4xl font-black text-white italic uppercase tracking-tighter mb-6">Essential <br>Audit</h4>
-                    <p class="text-slate-400 mb-12 leading-relaxed italic text-sm">
-                        Agile screening designed to identify high-level payment gaps and general compliance red flags.
-                    </p>
-                </div>
-                <a href="#contact" class="w-full text-center border border-white/10 py-5 rounded-xl text-[10px] font-black uppercase hover:bg-white hover:text-black transition-all tracking-[0.2em]">Inquire for Assessment</a>
-            </div>
-
-            <div class="bg-indigo-600 p-12 rounded-[3.5rem] shadow-2xl shadow-indigo-600/30 flex flex-col justify-between">
-                <div>
-                    <div class="text-[10px] font-black text-indigo-200 uppercase tracking-[0.3em] mb-4">Product 02</div>
-                    <h4 class="text-4xl font-black text-white italic uppercase tracking-tighter mb-6 text-white">Comprehensive <br>Solution</h4>
-                    <p class="text-indigo-100 mb-12 leading-relaxed italic text-sm">
-                        Full-scale structural analysis providing detailed cost reports and professional remediation roadmaps.
-                    </p>
-                </div>
-                <a href="#contact" class="w-full text-center bg-white text-black py-5 rounded-xl text-[10px] font-black uppercase hover:bg-black hover:text-white transition-all tracking-[0.2em]">Initialize Full Engagement</a>
+    <!-- Institutional Expansion Section -->
+    <section id="expansion" class="py-32 px-6 border-y border-white/5 bg-indigo-950/10">
+        <div class="max-w-4xl mx-auto text-center space-y-8">
+            <p class="text-pill">System Evolution</p>
+            <h3 class="serif text-4xl text-white italic leading-tight">Institutional <br>Monitoring Expansion.</h3>
+            <p class="text-sm text-slate-400 leading-loose italic">
+                In line with our commitment to absolute data integrity, TALHOUS is currently expanding its <strong>Active Monitoring Protocol</strong>. This evolution allows high-capacity entities to transition from periodic reviews to real-time structural oversight.
+            </p>
+            <div class="inline-block border border-indigo-500/20 px-8 py-3 rounded-full">
+                <p class="text-[10px] font-black text-indigo-400 uppercase tracking-[0.3em]">Currently Onboarding: Tier-1 Infrastructure Entities</p>
             </div>
         </div>
     </section>
@@ -218,32 +213,32 @@
     <section id="contact" class="py-48 px-6 max-w-7xl mx-auto">
         <div class="bg-indigo-950/20 border border-white/5 rounded-[4rem] p-12 md:p-24 overflow-hidden relative">
             <div class="grid md:grid-cols-2 gap-20 items-center">
-                <div class="space-y-8">
+                <div class="space-y-8 text-left">
                     <p class="text-pill">Inquiry Hub</p>
                     <h3 class="serif text-5xl text-white italic leading-tight">Secure Your <br>Entity Data.</h3>
                     <div class="space-y-8 pt-6">
                         <div class="flex items-center gap-6">
-                            <div class="w-14 h-14 bg-slate-900 border border-white/10 rounded-2xl flex items-center justify-center text-indigo-500">
+                            <div class="w-14 h-14 bg-slate-900 border border-white/10 rounded-2xl flex items-center justify-center text-indigo-500 shadow-lg">
                                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
                             </div>
                             <div>
                                 <p class="text-[10px] uppercase font-black text-slate-500 tracking-widest mb-1">Direct Liaison</p>
-                                <p class="text-xl font-bold text-white italic tracking-tighter">+27 65 854 8537</p>
+                                <p class="text-xl font-bold text-white italic tracking-tighter text-left">+27 65 854 8537</p>
                             </div>
                         </div>
                         <div class="flex items-center gap-6">
-                            <div class="w-14 h-14 bg-slate-900 border border-white/10 rounded-2xl flex items-center justify-center text-indigo-500">
+                            <div class="w-14 h-14 bg-slate-900 border border-white/10 rounded-2xl flex items-center justify-center text-indigo-500 shadow-lg">
                                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
                             </div>
                             <div>
                                 <p class="text-[10px] uppercase font-black text-slate-500 tracking-widest mb-1">Institutional Channel</p>
-                                <p class="text-xl font-bold text-white italic tracking-tighter">enquiries@talhous.co.za</p>
+                                <p class="text-xl font-bold text-white italic tracking-tighter text-left">enquiries@talhous.co.za</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="bg-black/40 border border-white/5 p-12 rounded-[2.5rem] text-center space-y-6">
-                    <p class="text-slate-400 text-sm leading-loose italic">
+                    <p class="text-slate-400 text-sm leading-loose italic text-justify">
                         Contact our Lead Case Officers for a confidential review of your entity's payment structures. We specialize in large-scale Industrial, Mining, and Logistics environments.
                     </p>
                     <a href="mailto:enquiries@talhous.co.za" class="block w-full bg-indigo-600 py-5 rounded-xl text-white font-black uppercase text-xs tracking-widest hover:bg-indigo-500 transition-all shadow-xl shadow-indigo-600/20">Initialize Consultation</a>
@@ -256,38 +251,57 @@
     <footer class="bg-black border-t border-white/10 pt-24 pb-12 px-6">
         <div class="max-w-7xl mx-auto">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-20 text-center md:text-left">
-                <div class="col-span-2 space-y-8">
-                    <span class="text-white font-black tracking-tighter text-2xl uppercase leading-none">TALHOUS™</span>
+                <div class="col-span-2 space-y-8 text-left">
+                    <img src="logo.png.png" alt="TALHOUS Footer Logo" class="h-10 w-auto opacity-80" onerror="this.style.display='none'">
+                    <span class="text-white font-black tracking-tighter text-2xl uppercase leading-none block">TALHOUS™</span>
                     <p class="text-[10px] text-slate-500 font-bold uppercase tracking-[0.4em] leading-loose">
                         Proprietary Strategic Compliance Hub.<br>
                         Registered Information Officer Authority // 2026.
                     </p>
                 </div>
-                <div class="space-y-6">
+                <div class="space-y-6 text-left">
                     <p class="text-[10px] font-black text-white uppercase tracking-widest">Statutory Hub</p>
                     <ul class="text-[9px] font-bold text-slate-400 uppercase tracking-[0.3em] space-y-4">
                         <li><button onclick="toggleModal('popia')" class="hover:text-indigo-400 transition-colors">POPIA Policy</button></li>
                         <li><button onclick="toggleModal('paia')" class="hover:text-indigo-400 transition-colors">PAIA Manual</button></li>
-                        <li><button onclick="toggleModal('ip')" class="hover:text-red-400 transition-colors">IP Protection Policy</button></li>
+                        <li><button onclick="toggleModal('ip')" class="hover:text-red-400 transition-colors">IP & Disclaimer Notice</button></li>
                     </ul>
                 </div>
                 <div class="flex flex-col items-center md:items-end justify-center">
-                    <div class="border border-indigo-500/20 px-6 py-4 rounded-xl text-center">
-                        <p class="text-[9px] font-black text-indigo-400 uppercase tracking-widest">Level 1 B-BBEE Contributor</p>
+                    <div class="border border-indigo-500/20 px-6 py-4 rounded-xl text-center bg-indigo-500/5">
+                        <p class="text-[9px] font-black text-indigo-400 uppercase tracking-widest">B-BBEE Level 1 Contributor</p>
                         <p class="text-[9px] font-bold text-slate-600 uppercase tracking-widest mt-1">100% Black Female Owned</p>
                     </div>
                 </div>
             </div>
-            <div class="border-t border-white/5 pt-12 flex flex-col md:flex-row justify-between items-center text-[9px] font-bold text-slate-700 uppercase tracking-[0.2em] gap-6">
-                <p>Proprietary Architecture. Defensible. Secure.</p>
-                <p>© 2026 TALHOUS STRATEGIC HUB (PTY) LTD.</p>
-            </div>
         </div>
     </footer>
 
+    <!-- Absolute Bottom Statutory Protection Layer -->
+    <section class="bg-black py-16 px-6 border-t border-white/5 no-print">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 text-[10px] font-bold uppercase tracking-[0.2em] text-slate-600 italic leading-loose">
+            <div class="space-y-6">
+                <p class="text-indigo-400 border-b border-indigo-400/20 pb-2 inline-block">Information Protection Notice</p>
+                <p class="text-justify">
+                    All data methodologies, structural mapping frameworks, and forensic logic models presented on this Hub are the exclusive intellectual property of TALHOUS Strategic Hub (Pty) Ltd. Unauthorized reproduction, reverse engineering, or systematic data extraction is strictly prohibited and governed by the IP Defense Protocols of the Republic of South Africa.
+                </p>
+            </div>
+            <div class="space-y-6">
+                <p class="text-red-400 border-b border-red-400/20 pb-2 inline-block">IP & Disclaimer Notice</p>
+                <p class="text-justify">
+                    The information provided on this Hub is for institutional strategic evaluation purposes only and does not constitute financial, legal, or tax advice. TALHOUS (K2025921247) shall not be held liable for discrepancies resulting from inaccurate raw data ingested into the forensic engine. All audits are conducted under strict Statutory NDA compliance protocols.
+                </p>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-[9px] font-bold text-slate-800 uppercase tracking-[0.2em] gap-6">
+            <p>Proprietary Architecture. Defensible. Secure.</p>
+            <p>© 2026 TALHOUS STRATEGIC HUB (PTY) LTD. ALL RIGHTS RESERVED.</p>
+        </div>
+    </section>
+
     <!-- Modals -->
     <div id="popia-modal" class="legal-modal">
-        <div class="max-w-3xl mx-auto py-20">
+        <div class="max-w-3xl mx-auto py-20 text-left">
             <h2 class="serif text-4xl text-white italic mb-8">POPIA Policy</h2>
             <div class="text-sm text-slate-400 space-y-4 leading-loose">
                 <p>Data processing is governed by statutory protocols as per the Protection of Personal Information Act.</p>
@@ -297,7 +311,7 @@
     </div>
 
     <div id="paia-modal" class="legal-modal">
-        <div class="max-w-3xl mx-auto py-20">
+        <div class="max-w-3xl mx-auto py-20 text-left">
             <h2 class="serif text-4xl text-white italic mb-8">PAIA Manual</h2>
             <div class="text-sm text-slate-400 space-y-4 leading-loose">
                 <p>Statutory Manual TH-STAT-2026 is maintained by the Information Officer authority.</p>
@@ -307,11 +321,12 @@
     </div>
 
     <div id="ip-modal" class="legal-modal">
-        <div class="max-w-3xl mx-auto py-20">
-            <h2 class="serif text-4xl text-red-400 italic mb-8">IP Protection</h2>
-            <div class="text-sm text-slate-400 space-y-4 leading-loose">
-                <p>All mapping frameworks and analytical logic are protected under Intellectual Property law. Unauthorized use or reproduction is prohibited.</p>
-                <button onclick="toggleModal('ip')" class="text-red-400 font-black uppercase text-xs border-b border-red-400 pb-1 mt-8">Close</button>
+        <div class="max-w-3xl mx-auto py-20 text-left">
+            <h2 class="serif text-4xl text-red-400 italic mb-8">IP & Disclaimer Notice</h2>
+            <div class="text-sm text-slate-400 space-y-6 leading-loose">
+                <p><strong>Intellectual Property:</strong> All mapping frameworks, structural logic, and remuneration review methodologies presented herein are the exclusive intellectual property of TALHOUS STRATEGIC HUB (PTY) LTD. Unauthorized use, reverse engineering, or reproduction is strictly prohibited.</p>
+                <p><strong>Disclaimer:</strong> The information provided on this hub is for institutional strategic purposes only and does not constitute financial advice. TALHOUS shall not be held liable for discrepancies resulting from incorrect raw data provided by the client entity.</p>
+                <button onclick="toggleModal('ip')" class="text-red-400 font-black uppercase text-xs border-b border-red-400 pb-1 mt-8">Close Notice</button>
             </div>
         </div>
     </div>
@@ -321,7 +336,7 @@
             document.getElementById(type + '-modal').classList.toggle('active');
         }
 
-        /* Protection Scripts */
+        /* Anti-Copy and Context Protection Scripts */
         document.onkeydown = function(e) {
             if(event.keyCode == 123) { return false; } // F12
             if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) { return false; } // Inspect
