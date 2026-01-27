@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TALHOUS | Strategic Remuneration & Compliance Intelligence</title>
-    <meta name="description" content="TALHOUS provides structural audits for primary entities. Specialized in cost recovery and statutory compliance. 100% Black Female Owned.">
+    <title>TALHOUS | Compliance Intelligence & Strategic Remuneration</title>
+    <meta name="description" content="TALHOUS provides structural audits for primary entities. Specialized in cost recovery and statutory compliance. 100% Black Female Owned. Compliance Intelligence at its core.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
     <style>
@@ -61,10 +61,6 @@
         .package-card { background: rgba(15, 23, 42, 0.6); border: 1px solid rgba(255, 255, 255, 0.05); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
         .package-card:hover { border-color: #6366f1; transform: translateY(-8px); background: rgba(15, 23, 42, 0.9); }
         
-        .launch-badge { background: linear-gradient(90deg, #6366f1, #a855f7); color: white; padding: 4px 12px; border-radius: 9999px; font-size: 9px; font-weight: 900; letter-spacing: 0.1em; animation: pulse 2s infinite; }
-        @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.7; } 100% { opacity: 1; } }
-
-        /* Ensure smooth tap targets for mobile */
         button, a { cursor: pointer; touch-action: manipulation; }
     </style>
 </head>
@@ -79,22 +75,28 @@
         </div>
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
             <div class="flex items-center gap-4">
-                <img src="logo.png" alt="TALHOUS Logo" class="h-12 w-auto logo-frame rounded-lg" onerror="this.style.display='none'; document.getElementById('text-logo').style.display='flex'">
-                <div id="text-logo" class="hidden items-center gap-3">
-                    <div class="w-10 h-10 bg-indigo-600 rounded-lg flex items-center justify-center font-black italic text-white text-xl">T</div>
+                <img src="logo.png.png" 
+                     alt="TALHOUS Logo" 
+                     class="h-10 w-auto logo-frame" 
+                     onerror="this.style.display='none'; document.getElementById('text-logo-fallback').style.display='flex'">
+                
+                <div id="text-logo-fallback" class="hidden items-center justify-center w-10 h-10 bg-indigo-600 rounded-lg text-white font-black italic text-xl shadow-lg">
+                    T
                 </div>
+                
                 <div class="flex flex-col">
                     <span class="text-white font-black tracking-tighter text-lg uppercase leading-none">TALHOUS™</span>
-                    <span class="text-[9px] text-indigo-400 font-bold uppercase tracking-[0.2em]">Strategic Hub</span>
+                    <span class="text-[9px] text-indigo-400 font-bold uppercase tracking-[0.2em] mt-1">Compliance Intelligence</span>
                 </div>
             </div>
+
             <div class="hidden md:flex gap-8 text-[10px] font-bold uppercase tracking-widest items-center text-slate-400">
-                <a href="#focus" class="hover:text-white transition-colors">Our Focus</a>
+                <a href="#focus" class="hover:text-white transition-colors">Strategic Focus</a>
                 <a href="#services" class="hover:text-white transition-colors">Standalone Services</a>
                 <a href="#packages" class="hover:text-white transition-colors">Tiers</a>
                 <button onclick="toggleModal('inquiry')" class="bg-indigo-600 px-5 py-2 rounded text-white hover:bg-indigo-500 transition-all uppercase tracking-widest font-extrabold shadow-lg shadow-indigo-600/20">Client Hub</button>
             </div>
-            <!-- Mobile Menu Indicator (Visual Only) -->
+
             <div class="md:hidden flex items-center">
                 <button onclick="toggleModal('inquiry')" class="bg-indigo-600 px-3 py-1.5 rounded text-[9px] text-white font-black uppercase tracking-widest shadow-lg">Inquiry</button>
             </div>
@@ -106,9 +108,9 @@
         <div class="max-w-7xl mx-auto space-y-10 text-left">
             <div class="flex flex-wrap items-center gap-4">
                 <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20">
-                    <span class="text-[10px] font-black text-indigo-400 uppercase tracking-widest">B-BBEE Level 1 Contributor: 135% Recognition</span>
+                    <span class="text-[10px] font-black text-indigo-400 uppercase tracking-widest">B-BBEE Level 1 Contributor</span>
                 </div>
-                <div class="launch-badge uppercase tracking-widest">Equity Pulse™ Coming Soon</div>
+                <div class="text-[9px] bg-indigo-600/20 text-indigo-400 px-3 py-1 rounded-full font-black uppercase tracking-widest">Equity Pulse™ Q2 Launch</div>
             </div>
             <h1 class="serif text-5xl md:text-8xl text-white leading-tight italic">
                 Defensible <br><span class="text-indigo-600">Operational</span> Performance.
@@ -117,21 +119,21 @@
                 We identify <strong>Hidden Costs</strong> within complex business payment structures. TALHOUS secures your operational benchmarks and bridges the gap between raw data and professional excellence.
             </p>
             <div class="pt-4 flex flex-wrap gap-4">
-                <a href="#focus" class="px-10 py-5 bg-white text-black font-black uppercase text-xs tracking-[0.2em] rounded hover:bg-indigo-600 hover:text-white transition-all shadow-xl shadow-white/5 italic">Discover Our Methodology</a>
+                <a href="#focus" class="px-10 py-5 bg-white text-black font-black uppercase text-xs tracking-[0.2em] rounded hover:bg-indigo-600 hover:text-white transition-all shadow-xl italic">Discover Our Methodology</a>
                 <button onclick="toggleModal('ip')" class="px-6 py-5 border border-white/10 text-white font-black uppercase text-[10px] tracking-widest rounded hover:bg-white/5 transition-all italic">IP & Disclaimer</button>
             </div>
         </div>
     </header>
 
-    <!-- Strategic Focus Section -->
+    <!-- Strategic Focus -->
     <section id="focus" class="py-32 px-6 border-b border-white/5 bg-slate-950/20">
         <div class="max-w-7xl mx-auto">
             <div class="grid lg:grid-cols-2 gap-20 items-start">
                 <div class="space-y-8 text-left">
                     <p class="text-pill">Our Core Focus</p>
-                    <h2 class="serif text-4xl md:text-5xl text-white italic leading-tight">Remuneration Review & <br>General Compliance.</h2>
+                    <h2 class="serif text-4xl md:text-5xl text-white italic leading-tight">Remuneration Review & <br>Compliance Intelligence.</h2>
                     <p class="text-slate-400 leading-loose text-justify italic text-sm">
-                        The core focus of our engagement is on the <strong>Structural Integrity</strong> of your company's spending. We identify <strong>Hidden Payment Gaps</strong>—discrepancies in bonuses, overtime, and shift-pay that often go unnoticed. We provide a specialized review layer that works alongside your primary team to ensure every rand is spent efficiently and remains legally defensible.
+                        The core focus of our engagement is on the <strong>Structural Integrity</strong> of your company's spending. We identify <strong>Hidden Payment Gaps</strong>—discrepancies in bonuses, overtime, and shift-pay that often go unnoticed. We provide a specialized review layer that ensures every rand is spent efficiently and remains legally defensible.
                     </p>
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -148,35 +150,35 @@
         </div>
     </section>
 
-    <!-- Standalone Services Pillars -->
+    <!-- Standalone Services -->
     <section id="services" class="py-32 px-6 bg-slate-950/20 border-b border-white/5 text-left">
         <div class="max-w-7xl mx-auto">
             <div class="mb-20">
-                <p class="text-pill mb-4 text-left">Standalone Pillars</p>
-                <h2 class="serif text-4xl md:text-5xl text-white italic leading-tight text-left">Service Nodes.</h2>
+                <p class="text-pill mb-4 text-left">Professional Support</p>
+                <h2 class="serif text-4xl md:text-5xl text-white italic leading-tight text-left">Standalone Nodes.</h2>
                 <p class="text-slate-500 text-sm mt-4 italic text-left">Each pillar can be engaged as a separate standalone professional service offer.</p>
             </div>
             
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="p-8 rounded-[2rem] bg-slate-900/40 glow-border flex flex-col justify-between min-h-[350px]">
+                <div class="p-8 rounded-[2rem] bg-slate-900/40 glow-border flex flex-col justify-between min-h-[300px]">
                     <div class="space-y-6">
-                        <div class="text-indigo-500 font-black text-[9px] uppercase tracking-[0.3em]">Support Pillar 01</div>
+                        <div class="text-indigo-500 font-black text-[9px] uppercase tracking-[0.3em]">Support Node 01</div>
                         <h3 class="text-white font-bold text-lg italic">Information Officer Support</h3>
                         <p class="text-xs text-slate-400 leading-relaxed italic">Managing official registration, appointment letters, and regulatory filing with the Information Regulator.</p>
                     </div>
                 </div>
-                <div class="p-8 rounded-[2rem] bg-slate-900/40 glow-border flex flex-col justify-between min-h-[350px]">
+                <div class="p-8 rounded-[2rem] bg-slate-900/40 glow-border flex flex-col justify-between min-h-[300px]">
                     <div class="space-y-6">
-                        <div class="text-indigo-500 font-black text-[9px] uppercase tracking-[0.3em]">Support Pillar 02</div>
-                        <h3 class="text-white font-bold text-lg italic text-left">Statutory Hub Implementation</h3>
-                        <p class="text-xs text-slate-400 leading-relaxed italic text-left">Customized PAIA Manuals and POPIA Privacy Policies tailored to your specific corporate record categories.</p>
+                        <div class="text-indigo-500 font-black text-[9px] uppercase tracking-[0.3em]">Support Node 02</div>
+                        <h3 class="text-white font-bold text-lg italic">Statutory Hub Implementation</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed italic">Customized PAIA Manuals and POPIA Privacy Policies tailored to your specific corporate record categories.</p>
                     </div>
                 </div>
-                <div class="p-8 rounded-[2rem] bg-slate-900/40 glow-border flex flex-col justify-between min-h-[350px]">
+                <div class="p-8 rounded-[2rem] bg-slate-900/40 glow-border flex flex-col justify-between min-h-[300px]">
                     <div class="space-y-6">
-                        <div class="text-indigo-500 font-black text-[9px] uppercase tracking-[0.3em]">Audit Pillar 01</div>
-                        <h3 class="text-white font-bold text-lg italic text-left">Physical Site Verification</h3>
-                        <p class="text-xs text-slate-400 leading-relaxed italic text-left">On-site inspections of physical access, waste management, and "clean desk" protocols to ensure legal compliance.</p>
+                        <div class="text-indigo-500 font-black text-[9px] uppercase tracking-[0.3em]">Audit Node 01</div>
+                        <h3 class="text-white font-bold text-lg italic">Physical Site Verification</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed italic">On-site inspections of physical access, waste management, and "clean desk" protocols to ensure legal compliance.</p>
                     </div>
                 </div>
             </div>
@@ -192,7 +194,6 @@
             </div>
             
             <div class="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto">
-                <!-- Essential (Pulse Scan) -->
                 <div class="package-card p-12 rounded-[3.5rem] space-y-10 flex flex-col border-white/5">
                     <div>
                         <h3 class="text-4xl font-black text-white italic mb-2 tracking-tighter">Essential</h3>
@@ -207,7 +208,6 @@
                     <button onclick="toggleModal('inquiry')" class="w-full py-5 border border-white/10 rounded-2xl text-center text-xs font-black uppercase tracking-widest hover:bg-indigo-600 hover:text-white transition-all italic font-bold">Initialize Pulse Scan</button>
                 </div>
 
-                <!-- Comprehensive Audit -->
                 <div class="package-card p-12 rounded-[3.5rem] space-y-10 flex flex-col border-indigo-500/30 bg-indigo-500/5 relative overflow-hidden">
                     <div class="absolute top-8 right-8">
                         <span class="bg-indigo-600 text-[8px] font-black px-4 py-1.5 rounded-full uppercase tracking-widest text-white shadow-xl">Full Remediation</span>
@@ -229,7 +229,7 @@
         </div>
     </section>
 
-    <!-- Case Study Section -->
+    <!-- Case Analysis -->
     <section id="case-study" class="py-32 px-6 bg-slate-900/10 border-b border-white/5">
         <div class="max-w-7xl mx-auto">
             <div class="bg-indigo-600/5 border border-indigo-500/20 p-10 md:p-20 rounded-[3rem] relative overflow-hidden">
@@ -250,7 +250,7 @@
         </div>
     </section>
 
-    <!-- System Evolution Section -->
+    <!-- System Evolution -->
     <section id="expansion" class="py-32 px-6 border-y border-white/5 bg-indigo-950/10">
         <div class="max-w-4xl mx-auto text-center space-y-8">
             <p class="text-pill">System Evolution</p>
@@ -268,25 +268,30 @@
     <footer class="bg-black border-t border-white/10 pt-24 pb-12 px-6">
         <div class="max-w-7xl mx-auto">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-20 text-center md:text-left">
-                <div class="col-span-2 space-y-8 text-left">
-                    <img src="logo.png" alt="TALHOUS Footer Logo" class="h-10 w-auto opacity-80 mb-4" onerror="this.style.display='none'">
-                    <span class="text-white font-black tracking-tighter text-2xl uppercase leading-none block">TALHOUS™</span>
+                <div class="col-span-2 space-y-6 text-left">
+                    <div class="flex items-center gap-3">
+                        <img src="logo.png.png" alt="TALHOUS Footer Logo" class="h-10 w-auto opacity-80" onerror="this.style.display='none'">
+                        <div class="flex flex-col">
+                            <span class="text-white font-black tracking-tighter text-2xl uppercase leading-none">TALHOUS™</span>
+                            <span class="text-[9px] text-slate-500 font-bold uppercase tracking-[0.3em] mt-1">Compliance Intelligence</span>
+                        </div>
+                    </div>
                     <p class="text-[10px] text-slate-500 font-bold uppercase tracking-[0.4em] leading-loose">
                         Strategic Compliance.<br>
-                        Registered Information Officer Authority // 2026.
+                        Registered information officer authority 2006.
                     </p>
                 </div>
                 <div class="space-y-6 text-left">
                     <p class="text-[10px] font-black text-white uppercase tracking-widest">Statutory Hub</p>
-                    <ul class="text-[9px] font-bold text-slate-400 uppercase tracking-[0.3em] space-y-4">
+                    <ul class="text-[9px] font-bold text-slate-500 uppercase tracking-[0.3em] space-y-4">
                         <li><button onclick="toggleModal('popia')" class="hover:text-indigo-400 transition-colors uppercase text-left">POPIA Policy</button></li>
                         <li><button onclick="toggleModal('paia')" class="hover:text-indigo-400 transition-colors uppercase text-left">PAIA Manual</button></li>
                     </ul>
                 </div>
                 <div class="flex flex-col items-center md:items-end justify-center">
                     <div class="border border-indigo-500/20 px-6 py-4 rounded-xl text-center bg-indigo-500/5">
-                        <p class="text-[9px] font-black text-indigo-400 uppercase tracking-widest">B-BBEE Level 1 Contributor</p>
-                        <p class="text-[9px] font-bold text-slate-600 uppercase tracking-widest mt-1">100% Black Female Owned</p>
+                        <p class="text-[9px] font-black text-indigo-400 uppercase tracking-widest leading-none">B-BBEE Level 1</p>
+                        <p class="text-[8px] font-bold text-slate-600 uppercase tracking-widest mt-2">100% Black Female Owned</p>
                     </div>
                 </div>
             </div>
@@ -297,9 +302,11 @@
     <div id="inquiry-modal" class="legal-modal">
         <div class="max-w-xl mx-auto py-20 text-center">
             <h2 class="serif text-4xl text-white italic mb-4">Secure Channel Initialized</h2>
-            <p class="text-slate-400 text-sm italic mb-8">All inquiries are routed through our encrypted statutory liaison node.</p>
-            <p class="text-2xl font-black text-white italic">enquiries@talhous.co.za</p>
-            <button onclick="toggleModal('inquiry')" class="mt-12 text-slate-500 font-black uppercase text-[10px] border-b border-slate-800 pb-1">Close Node</button>
+            <p class="text-slate-400 text-sm italic mb-8">All inquiries are routed via our encrypted statutory liaison node.</p>
+            <p class="text-2xl font-black text-white italic border-b border-indigo-600 inline-block pb-2">enquiries@talhous.co.za</p>
+            <div class="mt-12">
+                <button onclick="toggleModal('inquiry')" class="text-slate-500 font-black uppercase text-[10px] border border-slate-800 px-6 py-2 rounded hover:text-white transition-all">Close Node</button>
+            </div>
         </div>
     </div>
 
@@ -328,10 +335,10 @@
     <!-- IP MODAL -->
     <div id="ip-modal" class="legal-modal">
         <div class="max-w-3xl mx-auto py-20 text-left">
-            <h2 class="serif text-4xl text-red-400 italic mb-8">IP & Disclaimer Notice</h2>
+            <h2 class="serif text-4xl text-red-400 italic mb-8">IP Disclaimer</h2>
             <div class="text-sm text-slate-400 space-y-6 leading-loose">
-                <p><strong>Intellectual Property:</strong> All mapping frameworks, structural logic, and remuneration review methodologies presented herein are the exclusive intellectual property of TALHOUS STRATEGIC HUB (PTY) LTD. Unauthorized use, reverse engineering, or reproduction is strictly prohibited.</p>
-                <button onclick="toggleModal('ip')" class="text-red-400 font-black uppercase text-xs border-b border-red-400 pb-1 mt-8">Close Notice</button>
+                <p><strong>Compliance Intelligence:</strong> All mapping frameworks, structural logic, and remuneration review methodologies are the exclusive intellectual property of TALHOUS™ (K2025921247). Unauthorized reproduction is strictly prohibited.</p>
+                <button onclick="toggleModal('ip')" class="text-red-400 font-black uppercase text-xs border-b border-red-400 pb-1 mt-8">Close</button>
             </div>
         </div>
     </div>
@@ -342,11 +349,6 @@
             if (modal) {
                 modal.classList.toggle('active');
             }
-        }
-        document.onkeydown = function(e) {
-            if(event.keyCode == 123) { return false; } 
-            if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) { return false; } 
-            if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) { return false; } 
         }
     </script>
 </body>
